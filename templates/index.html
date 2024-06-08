@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prophet Model</title>
+</head>
+<body>
+    <h1>Prophet Model for Forecasting</h1>
+    <h2>Upload Dataset</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+
+    <h2>Real-time Prediction</h2>
+    <form action="/predict" method="post">
+        <label for="periods">Enter number of periods for prediction:</label>
+        <input type="text" id="periods" name="periods">
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
